@@ -609,6 +609,8 @@ A) 1. Default Constructor - The term "default constructor" refers to a construct
 
 79) middleware in .net core?
 A) Middleware are software components that are assembled into an application pipeline to handle requests and responses.
+   Each component chooses whether to pass the request on to the next component in the pipeline, and can perform certain actions before and after the next 
+   component is invoked in the pipeline.
 
 80) http verb list?
 A) 1. GET - Read -200 (OK), list of customers. Use pagination, sorting and filtering to navigate big lists.
