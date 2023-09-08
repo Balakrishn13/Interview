@@ -607,6 +607,16 @@ A) 1. Default Constructor - The term "default constructor" refers to a construct
    5. Static Constructor - This constructor is called just once in the class, and it is called when the first reference to a static member of the class is made, 
       which is when the static constructor is called. A static constructor is used to initialize the class's static fields or data and is only used once.
 
+79) middleware in .net core?
+A) Middleware are software components that are assembled into an application pipeline to handle requests and responses.
+
+80) http verb list?
+A) 1. GET - Read -200 (OK), list of customers. Use pagination, sorting and filtering to navigate big lists.
+   2. POST - POST - 201 (Created), 'Location' header with link to /customers/{id} containing new ID.
+   3. PUT - Update/Replace - 405 (Method Not Allowed), unless you want to update/replace every resource in the entire collection.
+   4. PATCH - Update/Modify - 405 (Method Not Allowed), unless you want to modify the collection itself.
+   5. DELETE - Delete - 405 (Method Not Allowed), unless you want to delete the whole collection—not often desirable.
+
 
 
 
