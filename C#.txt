@@ -623,6 +623,14 @@ A) 1. GET - Read -200 (OK), list of customers. Use pagination, sorting and filte
 A) SELECT DISTINCT `salary` FROM `employee` ORDER BY `salary` DESC LIMIT 1 OFFSET 2;
    SELECT DISTINCT `salary` FROM `employee` ORDER BY `salary` DESC LIMIT 2, 1
 
+82) Access Modifiers?
+Caller's location	                  public	protected internal	protected	internal	private protected	private
+Within the class	                    ✔️️	               ✔️	            ✔️	           ✔️	              ✔️	          ✔️
+Derived class (same assembly)	            ✔️	               ✔️	            ✔️	           ✔️	              ✔️	          ❌
+Non-derived class (same assembly)	    ✔️	               ✔️	            ❌	           ✔️	              ❌	          ❌
+Derived class (different assembly)	    ✔️	               ✔️	            ✔️	           ❌	              ❌	          ❌
+Non-derived class (different assembly)	    ✔️	               ❌	            ❌	           ❌	              ❌	          ❌
+
 
 
 
