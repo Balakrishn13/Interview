@@ -1,0 +1,377 @@
+select a."MetericesId",a."MetricesName",d."TypeName",a."QCName" from public."tblMetrices" a left outer join public."tblGoalToMetrices" b on a."MetericesId"=b."MetricesId" left outer join public."tblGoals" c on b."GoalId"=c."GoalId" left outer join  public."tblType" d on a."TypeId"=d."TypeId" where c."GoalId"=Gola_ID order by a."MetericesId";
+
+
+
+create extension postgis
+
+
+select "ULB",employeename,userid,phoneno,emailid,count(*) from "tblUnauthorizedConstruction" a,"tblemployees" b where a.employeeid=b.employeeid and "natureofconstruction"='Total UC' and "FirstNoticeflag"=false and "Active"=true and "TotalUCData"=true group by "ULB",employeename,userid,phoneno,emailid order by "ULB"
+
+
+
+
+https://www.c-sharpcorner.com/article/creating-your-first-mvc-5-project-understanding-its-folder-structure/
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-5.0&tabs=visual-studio
+https://ozanecare.com/how-to-create-mvc-project-in-visual-studio-2019/
+https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes
+https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/classes
+https://www.w3schools.com/cs/cs_classes.php
+https://www.c-sharpcorner.com/UploadFile/0c1bb2/types-of-classes-in-C-Sharp1/
+https://www.c-sharpcorner.com/article/creating-your-first-mvc-5-project-understanding-its-folder-structure/
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-5.0&tabs=visual-studio
+https://docs.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio
+
+
+DELTA003 and TEAM001 , pass@123
+Validator,Investor
+
+https://iris.thegiin.org/api/v1/metrics/5.2?search=agriculture&limit=20&start=0
+
+
+
+Runner.instance_.gameOver=()=>{}
+
+
+ <script>
+function pageLoad(sender, args) {
+$('.datePicker').datepicker({
+autoclose: true
+});
+};
+
+$('body').on('focus', ".datePicker", function () {
+debugger;
+$(this).datepicker({
+autoclose: true
+});
+});
+
+
+
+        function NumberCheck(input) {
+            debugger;
+            let value = input.value;
+            let numbers = value.replace(/[^0-9]/g, "");
+            input.value = numbers;
+        }
+
+        function DecimalCheck(input) {
+            debugger;
+            let value = input.value;
+            let numbers = value.replace(/[^0-9.]/g, "");
+
+            let count = 0;
+
+            // looping through the items
+            for (let i = 0; i < numbers.length; i++) {
+
+                // check if the character is at that position
+                if (numbers.charAt(i) == '.') {
+                    count += 1;
+                }
+            }
+            if (count > 1) {
+                numbers = numbers.substring(0, numbers.length - 1);
+            }
+            input.value = numbers;
+        }
+
+        function SplCharCheck(input) {
+            debugger;
+            let value = input.value;
+            let numbers = value.replace(/[^a-zA-Z0-9-.,/_&( )@]/g, "").trimStart();
+            input.value = numbers;
+        }
+        function AlphaNumeric(input) {
+            debugger;
+            let value = input.value;
+            let numbers = value.replace(/[^a-zA-Z0-9 ]/g, "").trimStart();
+            input.value = numbers;
+        }
+
+        function validateEmail(emailField) {
+            //debugger;
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if ($('#txtEmail').val() != '') {
+                if (reg.test(emailField.value) == false) {
+                    //alert('Invalid Email Address');                   
+                    $('#txtEmailID').focus();
+                    return false;
+                }
+                return true;
+            }
+            return true;
+        }
+
+ function PointCheck(input) {
+            debugger;
+            let value = input.value;
+            let numbers = value.replace(/[^0-9-.]/g, "");
+
+            let count = 0;
+            let neg = 0;
+
+            // looping through the items
+            for (let i = 0; i < numbers.length; i++) {
+                // check if the character is at that position
+                if (numbers.charAt(i) == '.') {
+                    count += 1;
+                }
+
+                if (i == 0) {
+
+                }
+                else {
+                    if (numbers.charAt(i) == '-') {
+                        numbers = numbers.substring(0, numbers.length - 1);
+                    }
+                }
+            }
+
+            //if (numbers.charAt(0) == '-') {
+
+            //}
+            //else if (numbers.charAt(i) == '-') {
+            // numbers = numbers.substring(0, numbers.length - 1);
+            //}
+
+            if (count > 1) {
+                numbers = numbers.substring(0, numbers.length - 1);
+            }
+            input.value = numbers;
+        }
+
+    </script>
+<style>
+ .Main-Content{
+            min-height: calc(100vh - 100px) !important;
+        }
+    </style>
+
+
+$(document).ready(function () {
+$("#ActivitiesInfo").parentsUntil(".sidebar-menu > .treeview-menu").siblings().removeClass('active menu-open').end().addClass('active menu-open');
+$("#ActivitiesInfo").addClass("active");
+})
+
+
+
+<script type="text/javascript">
+        window.oncontextmenu = function () {
+            return false;
+        }
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                return false;
+            }
+        });
+    </script>
+
+
+nuget: closedxml
+using ClosedXML.Excel;
+ private void ExportDataSetToExcel(DataSet ds)
+        {
+            // Response.Write("<script>alert('excel fired')</script>");
+            Random rn = new Random();
+            int Order = rn.Next(10000000, 99999999);
+
+            try
+            {
+                string UDA = Session["UDAName"].ToString();
+
+                using (XLWorkbook wb = new XLWorkbook())
+                {
+                    wb.Worksheets.Add(ds.Tables[0]);
+                    using (MemoryStream stream = new MemoryStream())
+                    {
+                        wb.SaveAs(stream);
+                        stream.Position = 0;
+
+                        string myName = Server.UrlEncode(UDA + "_" + Order + "_" + DateTime.Now.ToString("dd-MM-yyyy") + ".xlsx");
+
+                        Response.Clear();
+                        Response.Buffer = true;
+                        Response.AddHeader("content-disposition", "attachment; filename=" + myName);
+                        Response.ContentType = "application/vnd.ms-excel";
+                        Response.BinaryWrite(stream.ToArray());
+                        Response.End();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+                //AppendToErrorLog(ex.Message.ToString(), ex.StackTrace.ToString(), "", "");
+            }
+        }
+
+public void DownloadXlsx(string fileName)
+        {
+            string path = ConfigurationManager.ConnectionStrings["ReportTemplate"].ConnectionString;
+            FileInfo file = new FileInfo(fileName);
+            if (file.Exists)
+            {
+                Response.Clear();
+                Response.ClearHeaders();
+                Response.ClearContent();
+                Response.AddHeader("content-disposition", "attachment; filename=" + Path.GetFileName(fileName));
+                Response.AddHeader("Content-Type", "application/Excel");
+                Response.ContentType = "application/vnd.xlsx";
+                Response.AddHeader("Content-Length", file.Length.ToString());
+                Response.WriteFile(file.FullName);
+                Response.End();
+            }
+            else
+            {
+                Response.Write("This file does not exist.");
+            }
+        }
+
+
+
+
+
+
+
+<%-- paging --%>
+function pageLoad(sender, args) {
+            pageSize = 18;
+            incremSlide = 5;
+            startPage = 0;
+            numberPage = 0;
+            debugger;
+            var pageCount = Math.round($(".line-content").length / pageSize);
+            var totalSlidepPage = Math.floor(pageCount / incremSlide);
+            if (Math.round($(".line-content").length > 18))
+            {
+                for (var i = 0; i < pageCount; i++) {
+                    $("#pagin").append('<li><a href="#">' + (i + 1) + '</a></li> ');
+                    if (i > pageSize) {
+                        $("#pagin li").eq(i).hide();
+                    }
+                }
+
+                var prev = $("<li/>").addClass("prev").html("<< Prev").click(function () {
+                    startPage -= 5;
+                    incremSlide -= 5;
+                    numberPage--;
+                    slide();
+                });
+
+                prev.hide();
+
+                var next = $("<li/>").addClass("next").html("Next >>").click(function () {
+                    startPage += 5;
+                    incremSlide += 5;
+                    numberPage++;
+                    slide();
+                });
+
+                $("#pagin").prepend(prev).append(next);
+
+                $("#pagin li").first().find("a").addClass("current");
+
+                slide = function (sens) {
+                    $("#pagin li").hide();
+
+                    for (t = startPage; t < incremSlide; t++) {
+                        $("#pagin li").eq(t + 1).show();
+                    }
+                    if (startPage == 0) {
+                        next.show();
+                        prev.hide();
+                    } else if (numberPage == totalSlidepPage) {
+                        next.hide();
+                        prev.show();
+                    } else {
+                        next.show();
+                        prev.show();
+                    }
+                }
+
+                showPage = function (page) {
+                    $(".line-content").hide();
+                    $(".line-content").each(function (n) {
+                        if (n >= pageSize  (page - 1) && n < pageSize  page)
+                            $(this).show();
+                    });
+                }
+
+                showPage(1);
+                $("#pagin li a").eq(0).addClass("current");
+
+                $("#pagin li a").click(function () {
+                    $("#pagin li a").removeClass("current");
+                    $(this).addClass("current");
+                    showPage(parseInt($(this).text()));
+                });
+            }
+        };
+
+
+<%--style for paging--%>
+    <style>
+        .current {
+            color: green;
+        }
+
+        #pagin li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .prev {
+            cursor: pointer;
+        }
+
+        .next {
+            cursor: pointer;
+        }
+
+        .last {
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .first {
+            cursor: pointer;
+            margin-right: 5px;
+        }
+    </style>
+
+
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet" />
+ <script>           
+            var toDate = $('#ContentPlaceHolder1_txtYear').datepicker({
+                format: "yyyy",
+                minViewMode: 2,
+                autoclose: true
+            }).on('hide', function (date) {
+                if ($("#ContentPlaceHolder1_txtYear").val() != '') {
+                    var CurrentYear = new Date().getFullYear();
+                    var selectyear = date.target.value;
+                    if (CurrentYear >= selectyear) {
+                        $("#ContentPlaceHolder1_txtYear").val(date.target.value + "-" + (parseInt(date.target.value) + parseInt(1)));
+                    }
+                    else {
+                        $("#ContentPlaceHolder1_txtYear").val('');
+                        swal("", 'Year was Out of Boundary', 'warning');
+                    }
+                }
+
+            });
+
+            //$(".YearPicker").datepicker({
+            //    format: " yyyy", // Notice the Extra space at the beginning
+            //    viewMode: "years",
+            //    minViewMode: "years"
+            //});
+        </script>
