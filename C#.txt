@@ -631,7 +631,87 @@ Non-derived class (same assembly)	    ✔️	               ✔️	            �
 Derived class (different assembly)	    ✔️	               ✔️	            ✔️	           ❌	              ❌	          ❌
 Non-derived class (different assembly)	    ✔️	               ❌	            ❌	           ❌	              ❌	          ❌
 
+83) What is the diff b/w MVC and web API
+--We can use the MVC for developing  the Web application that replies as both data and views but the Web API is used for generating the HTTP services that replies only as data.
+--In the Web API the request performs tracing with the actions depending on the HTTP services but the MVC request performs tracing with the action name.
+--The Web API returns the data in various formats, such as JSON, XML and other format based on the accept header of the request. But the MVC returns the data in the JSON format by using JSONResult.
+--The Web API includes the various features of the MVC, such as routing, model binding but these features are different and are defined in the "System.Web.Http" assembly. And the MVC features are defined in the " System.Web.Mvc" assembly.
+--The Web API helps the creation of RESTful services over the .Net Framework but the MVC does not support.
 
+
+84) What is the diff b/w web service and web API
+--All web services are APIs but All APIs are not web services
+--web service supports XML. web API supports XML, JSON, or any other given format.
+--web service does not have light-weight architecture because it needs SOAP protocol to send or receive and data over the network. API has a light-weight architecture.
+--web service supports only http protocol, web API supports http and https.
+
+85) What is the diff b/w soap API and web API
+--soap transports data in standard XML format. web API transports data either XML, JSON, Text and HTML.
+--soap works with Web Services Description Language(WSDL). web API works with GET, PUT, DELETE, POST.
+--SOAP is less preferred than REST. REST more preferred than SOAP.
+
+
+86) exception handling in sql?
+A) BEGIN TRY
+	--logic
+   END TRY
+   BEGIN CATCH
+	PRINT 'ERROR OCCURED: ' + ERROR_MESSAGE();
+   END CATCH
+
+
+87) MVC Appication life cycle?
+A) Any web application has two main execution steps, first understanding the request and depending on the type of the request sending out an appropriate response
+   MVC requests are mapped to route tables which in turn specify which controller and action to be invoked. So if the request is the first request the first thing is to fill the rout table with routes collection. Depending on the URL sent “UrlRoutingModule” searches the route table to create “RouteData” object which will help create "RequestContext" object and this request object is sent to “MvcHandler”. 
+
+88) List out different return types of a controller action method?
+A) The base type of all these result types is ActionResult.
+
+	ViewResult (View) - This return type is used to return a webpage from an action method.
+	PartialviewResult (Partialview) - This return type is used to send a part of a view that will be rendered in another view.
+	RedirectResult (Redirect) - This return type is used to redirect to any other controller and action method depending on the URL.
+	RedirectToRouteResult (RedirectToAction, RedirectToRoute) - This return type is used when we want to redirect to any other action method.
+	ContentResult (Content) - This return type is used to return HTTP content type like text/plain as the result of the action.
+	jsonResult (json) - This return type is used when we want to return a JSON message.
+	javascriptResult (javascript) - This return type is used to return JavaScript code that will run in the browser.
+	FileResult (File) - This return type is used to send binary output in response.
+	EmptyResult - This return type is used to return nothing (void) in the result.
+
+89) What are the Filters in MVC?
+A) controllers define action methods and these action methods generally have a one-to-one relationship with UI controls such as clicking a button or a link. Many times we would like to perform some action before or after a particular operation. For achieving this functionality, ASP.NET MVC provides a feature to add pre and post-action behaviors on the controller's action methods.
+
+	Action Filters - Action filters are used to implement logic that gets executed before and after a controller action executes. We will look at Action Filters in detail in this chapter.
+	Authorization Filters - Authorization filters are used to implement authentication and authorization for controller actions.
+	Result Filters - Result filters contain logic that is executed before and after a view result is executed. For example, you might want to modify a view result right before the view is rendered to the browser.
+	Exception Filters - Exception filters are the last type of filter to run. You can use an exception filter to handle errors raised by either your controller actions or controller action results. You can also use exception filters to log errors.
+
+90) What are Action Filters in MVC?
+A) Action Filters are additional attributes that can be applied to either a controller section or the entire controller to modify the way in which action is executed.
+
+	Output Cache - This action filter caches the output of a controller action for a specified amount of time.
+	Handle Error - This action filter handles errors raised when a controller action executes.
+	Authorize - This action filter enables you to restrict access to a particular user or role.
+
+91) Mention what is the difference between Temp data, View, and View Bag?
+A) ViewData					  ViewBag						TempData
+--used to pass data from controller to view.	  --used to pass data from the controller to view.	--used to pass data from the current req. to the next req.
+--It is available for the current request only.	  --It is also available for the current request only.	--It keeps the information for the time of an HTTP Request.                                                                          					this means only from one page to another. It helps to maintain 													the data when we move from one controller to another controller 													or from one action to another action
+--Requires typecasting for complex data types.	  --It doesn’t require typecasting.			--It requires typecasting for complex data types.
+--If redirection occurs, then its value becomes null.
+
+92) Explain Areas in MVC? 
+A) Areas are just a way to divide or “isolate” the modules of large applications in multiple or separated MVC. When you add an area to a project, a route for the area is defined in an AreaRegistration file. The route sends requests to the area based on the request URL
+
+93) Explain the concept of MVC Scaffolding?
+A) ASP.NET Scaffolding is a code generation framework for ASP.NET Web applications. Using scaffolding can reduce the amount of time to develop standard data operations in your project.
+
+
+94) Filetrs in Web API?
+A) Action Filter - Used to add extra logic before or after action methods execute.
+   Authorization Filter - Used to restrict access to action methods to specific users or groups.
+   Exception Filter - Used to handle all unhandled exception in Web API.
+   Result Filters - Result filters are executed before and after the execution of the result returned by a controller action. They allow you to modify the result before it's sent to the client
+   Override Filters - Override filters allow you to override the behavior of other filters. They provide a way to control the execution order of filters and can be useful for implementing custom filter chains.
 
 
 
