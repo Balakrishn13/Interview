@@ -716,6 +716,27 @@ A) Action Filter - Used to add extra logic before or after action methods execut
    Result Filters - Result filters are executed before and after the execution of the result returned by a controller action. They allow you to modify the result before it's sent to the client
    Override Filters - Override filters allow you to override the behavior of other filters. They provide a way to control the execution order of filters and can be useful for implementing custom filter chains.
 
+95) When to use SQL Server Service Broker?
+A) Service Broker can distribute data workloads across several databases without programming complex communication and messaging internals.
+
+96) What is Dapper?
+A) Dapper is a simple and lightweight ORM(Object Relational Mapper) framework that allows you to execute SQL queries and map the results to .NET objects. Dapper uses raw SQL queries, which means that you have full control over the SQL that is executed. This makes Dapper fast and efficient, especially when dealing with large datasets. Additionally, Dapper is easy to use and has a small learning curve.
+
+97) What is AutoMapper in C#?
+A) AutoMapper is a popular open-source library in C# that simplifies mapping data between different classes or objects. It helps eliminate repetitive and error-prone code when copying data from one object to another. AutoMapper is especially useful in scenarios like mapping database entities to DTOs (Data Transfer Objects) or ViewModel objects.
+
+98) What is mock in xUnit testing?
+A) Mocking is a process used in unit testing when the unit being tested has external dependencies. The purpose of mocking is to isolate and focus on the code being tested and not on the behavior or state of external dependencies.
+
+99) what is telemetry?
+A) data that is automatically collected and uploaded to Microsoft to improve the customer experience and to operate the business.
+
+100) What is an application insight?
+A) Application Insights collects telemetry about your app, including web server telemetry, web page telemetry, and performance counters. 
+
+101) What is OData and why is it used?
+A) The OData Protocol is an application-level protocol for interacting with data via RESTful interfaces. It supports the description of data models, editing and querying of data according to those models.
+
 
 
 
