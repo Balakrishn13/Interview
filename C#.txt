@@ -1,5 +1,8 @@
 As of November 2023, the most recent stable version of the language is C# 12.0, which was released in 2023 in .NET 8.0.
 
+What's new in C# latest version?
+C# 13 also supports extension static members, enabling the addition of static methods to existing types.
+
 
 1) what is a class?
 A) A class is a user-defined blueprint or prototype from which objects are created. Basically, a class combines the fields and methods(member function which defines actions) into a single unit. In C#, classes support polymorphism, inheritance and also provide the concept of derived classes and base classes.
@@ -736,6 +739,20 @@ A) Application Insights collects telemetry about your app, including web server 
 
 101) What is OData and why is it used?
 A) The OData Protocol is an application-level protocol for interacting with data via RESTful interfaces. It supports the description of data models, editing and querying of data according to those models.
+
+102) what is routing in mvc?
+A) Routing in ASP.NET MVC is a feature that maps incoming requests to controller actions. a pattern-matching system that monitors the incoming request and figures out what to do with that request.
+
+103) What is routing and three segments?
+A) The Default route maps the first segment of a URL to a controller name, the second segment of a URL to a controller action, and the third segment to a parameter named id.
+
+104) How to enable routing in MVC?
+A) add a call to routes. MapMvcAttributeRoutes() method within RegisterRoutes() method of RouteConfig. cs file.
+
+105) What are the three models of MVC?
+A) The MVC (Model-View-Controller) design pattern breaks an application into three parts: the Model (which handles data), the View (which is what users see), and the Controller (which connects the two).
+
+106) 
 
 
 
