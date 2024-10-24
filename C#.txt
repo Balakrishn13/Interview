@@ -615,8 +615,8 @@ A) 1. Default Constructor - The term "default constructor" refers to a construct
 
 79) middleware in .net core?
 A) Middleware are software components that are assembled into an application pipeline to handle requests and responses.
-   Each component chooses whether to pass the request on to the next component in the pipeline, and can perform certain actions before and after the next 
-   component is invoked in the pipeline.
+   Middleware components can perform operations before and after the next component in the pipeline, such as authentication, logging, exception handling, and 
+   static file serving.
 
 80) http verb list?
 A) 1. GET - Read -200 (OK), list of customers. Use pagination, sorting and filtering to navigate big lists.
@@ -752,7 +752,18 @@ A) add a call to routes. MapMvcAttributeRoutes() method within RegisterRoutes() 
 105) What are the three models of MVC?
 A) The MVC (Model-View-Controller) design pattern breaks an application into three parts: the Model (which handles data), the View (which is what users see), and the Controller (which connects the two).
 
-106) 
+106) difference between addtransient and addscoped and addsingleton?
+A) The main difference between AddTransient, AddScoped, and AddSingleton is how long the service instance lasts:
+   AddTransient
+   A new instance of the service is created each time it's requested. This lifetime works best for lightweight, stateless services.
+   AddScoped
+   A single instance of the service is created per HTTP request. The same instance is shared across the request, but new instances are generated for each new 
+   request.
+   AddSingleton
+   A single instance of the service is created for the entire application lifetime. The same instance is shared across the application, so instances remain the 
+   same even if you refresh the page or load a new tab.
+    Here are some ways to register design patterns in Program.cs:
+      builder.Services.AddScoped<IContext, Context>();
 
 
 
