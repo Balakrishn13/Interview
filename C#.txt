@@ -774,19 +774,27 @@ A) The new keyword in C# has multiple uses, including:
    Instantiation of anonymous types: The new operator can be used to create an instance of an anonymous type. For example, 
    var example = new { Greeting = "Hello", Name = "World" };
 
-108) what is tcp connection?
+108) how is process the url request?
+A) When a user enters a URL into a browser, the browser processes the request in the following steps: 
+   Find the IP address: The browser looks up the IP address for the domain in the URL. 
+   Open a connection: The browser opens a TCP connection with the server at the destination's IP address. 
+   Send the request: The browser sends an HTTP request to the server. 
+   Receive a response: The server processes the request and sends back a response. 
+   Render the content: The browser renders the content from the response. 
+
+109) what is tcp connection?
 A) Transmission Control Protocol (TCP) is a communications standard that enables application programs and computing devices to exchange messages over a network. It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks.
 
-109) What is TCP and HTTP?
+110) What is TCP and HTTP?
 A) TCP is in charge of setting up a reliable connection between two machines and HTTP uses this connection to transfer data between the server and the client. HTTP is used for transferring data while TCP is in charge of setting up a connection which should be used by HTTP in the communication process.
 
-110) iis handler?
+111) iis handler?
 A) Handlers are Internet Information Services (IIS) components that are configured to process requests to specific content, typically to generate a response for the request resource.
 
-111) What is shared method in C#?
+112) What is shared method in C#?
 A) these objects (that are declared with this keyword) are accessible by other functions and classes without having to create a new instance.
 
-112) what is the use of interface in c#?
+113) what is the use of interface in c#?
 A) Interface provides flexibility, modularity, code reusability, and facilitate better design and problem-solving practices
    Abstraction: Interfaces can abstract away the implementation details of a class or struct, making code easier to understand and more modular.
    Multiple inheritance: C# does not support multiple inheritance of classes, but it does support multiple inheritance of interfaces.
@@ -794,16 +802,8 @@ A) Interface provides flexibility, modularity, code reusability, and facilitate 
    Loosely-coupled applications: Interfaces can be used to build loosely-coupled applications, where components are not dependent on each other.
    Simulate inheritance: Interfaces can be used to simulate inheritance for structs.
 
-113) How to access abstract class method in C#?
+114) How to access abstract class method in C#?
 A) To access the abstract class, it must be inherited from another class.
-
-114) how is process the url request?
-A) When a user enters a URL into a browser, the browser processes the request in the following steps: 
-   Find the IP address: The browser looks up the IP address for the domain in the URL. 
-   Open a connection: The browser opens a TCP connection with the server at the destination's IP address. 
-   Send the request: The browser sends an HTTP request to the server. 
-   Receive a response: The server processes the request and sends back a response. 
-   Render the content: The browser renders the content from the response. 
 
 115) How launchSettings.json different from appSettings.json
 A) While both are configuration files, the launchSettings.json file is used to specify the settings that control how the application is launched, while the 
