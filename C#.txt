@@ -809,7 +809,103 @@ A) To access the abstract class, it must be inherited from another class.
 A) While both are configuration files, the launchSettings.json file is used to specify the settings that control how the application is launched, while the 
    appSettings.json file is used to specify application specific configurations.
 
-116) 
+116) how to remove duplicate values from array using c#?
+A) 1.Distinct() Function
+      int[] arr = { 1, 2, 2, 3, 4, 4, 5 };
+        // Use Distinct to get unique values
+        int[] distinct = arr.Distinct().ToArray();
+
+   2.Using HashSet<T>
+      int[] arr = { 1, 2, 2, 3, 4, 4, 5 };
+        HashSet<int> set = new HashSet<int>(arr);
+
+   3.Using a Loop
+      int[] arr = { 1, 2, 2, 3, 4, 4, 5 };
+        List<int> distinctList = new List<int>();
+
+        foreach (int num in arr)
+        {
+            if (!distinctList.Contains(num))
+            {
+                distinctList.Add(num);
+            }
+        }
+
+117) What is Reflection in C#?
+A) Reflection is the process of describing the metadata of types, methods, and fields in a code. The namespace System. Reflection enables you to obtain data 
+   about the loaded assemblies, the elements within them like classes, methods, and value types.
+
+118) What are the types of classes in C#?
+A)  Abstract class, Partial class, Sealed class, Static class
+
+119) What is Multithreading with .NET?
+A) Multi-threading is a process that contains multiple threads within a single process. Here each thread performs different activities. For example, we have a class and this call contains two different methods, now using multithreading each method is executed by a separate thread. So the major advantage of multithreading is it works simultaneously, which means multiple tasks execute at the same time. And also maximizing the utilization of the CPU because multithreading works on time-sharing concept mean each thread takes its own time for execution and does not affect the execution of another thread, this time interval is given by the operating system.
+
+120) What is the difference between to dispose and finalize methods in C#?
+A) The primary difference between dispose() and finalize() is that the dispose() must be explicitly invoked by the user and the finalize() is called by the garbage collector when the object is destroyed.
+
+121) heap and stack memory in c#?
+A) Stack Memory
+    Usage: Used for static memory allocation and managing function calls.
+    Storage: Stores value types (e.g., int, char, float) and references to objects.
+    Access Speed: Fast access due to its LIFO (Last In, First Out) structure.
+    Lifetime: Variables are automatically deallocated when they go out of scope.
+    Example: Local variables within a method are stored on the stack.
+  Heap Memory
+    Usage: Used for dynamic memory allocation.
+    Storage: Stores objects and reference types (e.g., class, array).
+    Access Speed: Slower access compared to stack due to its unordered nature.
+    Lifetime: Managed by the garbage collector, which frees up memory when objects are no longer in use.
+    Example: Objects created using the new keyword are stored on the heap.
+
+122) static class in c#?
+A) A static class in C# is a class that cannot be instantiated and can only contain static members. This means you cannot create objects of a static class, and it is used to group methods and properties that do not require an instance of the class to be accessed.
+Key Features of Static Class
+Contains only static members: All members of a static class must be static. This includes methods, properties, fields, and events.
+Cannot be instantiated: You cannot create an instance of a static class using the new keyword.
+Sealed by default: Static classes are implicitly sealed, meaning they cannot be inherited.
+No instance constructors: Static classes cannot have instance constructors, but they can have static constructors.
+
+123) What are the distinctions between Array and Array List in C#?
+A) Arrays store values or elements of the same data type, whereas array lists store values of various data types.
+Arrays will use a fixed length, whereas array lists will not.
+
+124) What exactly is the distinction between public, static, and void?
+A) Public: Variables and methods declared as public are accessible from anywhere in the application. 
+
+    Static: Without creating an instance of the class, static declared variables or methods are globally accessible. Static members are not globally accessible by default; it depends on the type of access modification used. The compiler saves the method's address as the entry point and uses it to start execution before any objects are created. 
+
+    Void: It is a type modifier that indicates that the method or variable returns null.
+
+125) What is the distinction between System.String and System.Text.StringBuilder?
+A) Systems.Strings are unchangeable. When we change the value of a string variable, we allocate new memory to the new value and release the previous memory allocation. System.Text.StringBuilder was created with the concept of a mutable string in mind, allowing a variety of operations to be performed without the need for a separate memory location for the modified string.
+
+126) What is the use of ‘using’ statement in C#?
+A) The ‘using’ block is used to obtain a resource and process it and then automatically dispose of when the execution of the block completed.
+
+127) What is difference between the “throw” and “throw ex” in .NET?
+A) “Throw” statement preserves original error stack whereas “throw ex” have the stack trace from their throw point. It is always advised to use “throw” because it provides more accurate error information.
+
+128) What is a Web API?
+A) A Web API (Application Programming Interface) is an interface that allows different software systems to communicate and interact with each other over the internet using standardized protocols such as HTTP.
+
+129) What is the difference between SOAP and RESTful APIs?
+A) SOAP (Simple Object Access Protocol) is a protocol for exchanging structured information in the implementation of web services, while RESTful APIs use standard HTTP methods and represent resources as URLs.
+
+130) What is an API endpoint?
+A) An API endpoint is a specific URL within a web API that represents a resource or a collection of resources. Each endpoint corresponds to a particular operation that the API can perform.
+
+131) What is CORS and why is it important in Web APIs?
+A) CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers that restricts resources from being requested from another domain. It is important in Web APIs because it allows servers to specify which origins are allowed to access their resources, thereby preventing unauthorized access to sensitive data.
+
+132) What are the advantages of using JWT (JSON Web Tokens) for authentication in Web APIs?
+A) JWT is a compact, URL-safe token format that securely transmits information between parties as a JSON object. Advantages include stateless authentication, scalability, and the ability to carry custom claims. Additionally, JWTs are easy to implement and can be used across different platforms and languages.
+
+133) 
+
+     
+
+    
 
 
 
