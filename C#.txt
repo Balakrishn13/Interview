@@ -904,6 +904,22 @@ A) JWT is a compact, URL-safe token format that securely transmits information b
 133) ienumerable and iqueryable in c#?
 A) IEnumerable is simpler and provides basic functionality for working with collections, whereas IQueryable provides additional functionality for querying data from a data source in a more efficient manner by performing filtering and sorting operations in the data source itself before retrieving the data.
 
+134) biggest number in the given numbers in c# code to find?
+A)             int[] numbers = { 10, 5, 25, 8, 15 };
+               int largest = numbers.Max();
+
+               int a = 10;
+               int b = 20;
+               int largest = Math.Max(a, b);
+
+               int x = 3, y = 4, z = 5;
+               Console.WriteLine(Math.Max(Math.Max(x, y), z));
+
+135) difference between app.use and app.run in .net core?
+A) app.Run will end the request, and app.Use will pass the request to next middleware.
+
+136) 
+
 
 
      
