@@ -901,7 +901,10 @@ A) CORS (Cross-Origin Resource Sharing) is a security feature implemented by web
 132) What are the advantages of using JWT (JSON Web Tokens) for authentication in Web APIs?
 A) JWT is a compact, URL-safe token format that securely transmits information between parties as a JSON object. Advantages include stateless authentication, scalability, and the ability to carry custom claims. Additionally, JWTs are easy to implement and can be used across different platforms and languages.
 
-133) 
+133) ienumerable and iqueryable in c#?
+A) IEnumerable is simpler and provides basic functionality for working with collections, whereas IQueryable provides additional functionality for querying data from a data source in a more efficient manner by performing filtering and sorting operations in the data source itself before retrieving the data.
+
+
 
      
 
