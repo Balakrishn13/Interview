@@ -918,7 +918,56 @@ A)             int[] numbers = { 10, 5, 25, 8, 15 };
 135) difference between app.use and app.run in .net core?
 A) app.Run will end the request, and app.Use will pass the request to next middleware.
 
-136) 
+136) difference between truncate and delete and drop?
+A) The DROP command in SQL removes the table from the database, the DELETE command removes one or more records from the table, and the TRUNCATE command removes all the rows from the existing table
+
+137) SQL Commands?
+A) DDL – Data Definition Language: CREATE, Drop, Alter, Truncate, Comment, Rename
+   DQL – Data Query Language: Select 
+   DML – Data Manipulation Language: Insert, Update, Delete, Lock
+   DCL – Data Control Language: Grant, Revoke
+   TCL – Transaction Control Language: BEGIN TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT
+
+138) Important SQL Commands?
+A) SELECT: Used to retrieve data from a database.
+   INSERT: Used to add new data to a database.
+   UPDATE: Used to modify existing data in a database.
+   DELETE: Used to remove data from a database.
+   CREATE TABLE: Used to create a new table in a database.
+   ALTER TABLE: Used to modify the structure of an existing table.
+   DROP TABLE: Used to delete an entire table from a database.
+   WHERE: Used to filter rows based on a specified condition.
+   ORDER BY: Used to sort the result set in ascending or descending order.
+   JOIN: Used to combine rows from two or more tables based on a related column between them.
+
+139) Can DROP be rolled back?
+A) No, a "DROP" statement, which permanently removes a table or database, cannot be rolled back.
+
+140) What is the difference between a drop table and a DELETE table?
+A) DROP will delete all data and the table structure as well. DELETE will delete the data but the table structure will remain the same and we can still rollback the data.
+
+141) Can I rollback after commit?
+A) A transaction can't be rolled back after a COMMIT TRANSACTION statement is executed.
+
+142) What is the difference between a primary key and a unique key?
+A) a primary key uniquely identifies each row in a table and cannot contain NULL values, while a unique key can allow one NULL value and a table can have multiple unique keys.
+
+143) What is schema in SQL?
+A) a graphical representation that makes it easy to organize information or knowledge, a collection of database objects like tables, triggers, stored procedures, etc.
+
+144) Identify Duplicate Values in SQL?
+A) SELECT ColumnName, COUNT(ColumnName) AS count FROM TableName GROUP BY ColumnName HAVING COUNT(ColumnName) > 1
+
+145) Can we rollback DELETE?
+A) Yes, you can rollback the data after using DELETE command since it is a DML statement.
+
+146) What is normalization in SQL?
+A) Normalization is the process of organizing data in a database.
+
+147) Can we ROLLBACK after COMMIT?
+A) A transaction can't be rolled back after a COMMIT TRANSACTION statement is executed
+
+148) 
 
 
 
