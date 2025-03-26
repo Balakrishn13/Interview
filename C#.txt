@@ -967,7 +967,22 @@ A) Normalization is the process of organizing data in a database.
 147) Can we ROLLBACK after COMMIT?
 A) A transaction can't be rolled back after a COMMIT TRANSACTION statement is executed
 
-148) 
+148) Common Table Expression (CTE)?
+A) A Common Table Expression (CTE) in SQL is a temporary result set that can be referenced within a SELECT, INSERT, UPDATE, or DELETE statement. CTEs are defined using the WITH keyword and allow you to create a named, reusable subquery within your SQL statement.
+
+149) What is trigger in SQL?
+A) SQL triggers are stored procedures that automatically execute in response to certain events in a specific table or view in a database. They are used to maintain the integrity of the data, enforce business rules, and automate tasks. We can set triggers to fire before or after an INSERT , UPDATE , or DELETE operation.
+
+150) What are the views in SQL?
+A) Views are a special version of tables in SQL. They provide a virtual table environment for various complex operations. You can select data from multiple tables, or you can select specific data based on certain criteria in views.
+
+151) What is the difference between a view and a table in SQL?
+A) A table in a relational database consists of rows and columns which store data. A view, in simple terms, can be defined as a virtual table that is drawn out from a database.
+
+152) What is pivot in SQL?
+A) SQL PIVOT is a function that is used to create pivot tables and divide components of data into different columns and rows to make it easier to analyze.
+
+153) 
 
 
 
