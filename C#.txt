@@ -1128,7 +1128,18 @@ A) Improved Responsiveness: By avoiding thread blocking, asynchronous programmin
 179) When not to use asynchronous?
 A) If a situation requires urgent action or decision-making, asynchronous communication may not be the best option, as it can cause a delay in the response or decision.
 
-180) 
+180) garbage collection in c#?
+A) garbage collection (GC) is an automatic memory management mechanism that periodically scans the application's memory to identify and reclaim objects that are no longer in use, freeing up memory for future use.
+
+181) difference between finalize and dispose in c#?
+A) Dispose() is a method you explicitly call to release resources (both managed and unmanaged) when an object is no longer needed, while Finalize() (or the destructor) is a method called automatically by the garbage collector to release unmanaged resources before the object is destroyed. 
+Dispose(): Use Dispose() when you need to release resources at a specific time or when you need to ensure that resources are released even if exceptions occur.
+Finalize(): Use Finalize() as a fallback mechanism to release unmanaged resources if Dispose() is not called. However, it's generally preferred to rely on Dispose() for resource management and only use Finalize() as a safety net. 
+
+182) What is ASP.NET Web API routing?
+A) Routing is a way how Web API matches a URI to an action. It is basically a process that decides which action and controller should be called. 
+Convention-based routing: Web API supports convention-based routing. In this type of routing, Web API uses route templates to select which controller and action method to execute. 
+Attribute-based routing: Web API 2 generally supports a new type of routing known as attribute routing. As the name suggests, it uses attributes to define routes. It is the ability to add routes to the route table via attributes. 
 
 
 
