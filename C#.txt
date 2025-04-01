@@ -1042,7 +1042,93 @@ A) OpenId, OAuth and OpenIdConnect are protocols while JWTToken is just a token.
 166) which method will create the jwt token in c#?
 A) To create a JWT token in C#, you'll use the JwtSecurityToken class from the System.IdentityModel.Tokens.Jwt namespace, along with a JwtSecurityTokenHandler to write the token. 
 
-167) 
+167) difference between multithreading and asynchronous programming in c#?
+A) In C#, multithreading involves using multiple threads to execute tasks concurrently, while asynchronous programming uses a single thread to manage tasks, allowing for non-blocking operations and improved responsiveness, especially for I/O-bound scenarios. 
+
+168) What are the Thread and Process?
+A) Process – Process is something that the operating system uses to execute a program by providing the resources required. Each process has a unique process id associated with it. We can view the process within which a program is running using the windows task manager.
+
+Thread – A Thread is a lightweight process that is responsible for executing application code. A process has at least one thread which is commonly called the main thread which actually executes the application code. A single process can have multiple threads.
+
+169) What is the difference between Process and Thread?
+A) A process is started when you start an Application. The process is a collection of resources like virtual address space, code, security contexts, etc. A process can start multiple threads. Every process starts with a single thread called the primary thread. You can create n number of threads in a process. Threads share the resources allocated to the process. A process is the parent and threads are his children.
+
+170) Why do we need Multi-threading in our project?
+A) You can do multiple tasks simultaneously. For e.g. saving the details of the user to a file while at the same time  retrieving something from a web service.
+Threads are much more lightweight than processes. They don’t get their own resources. They used the resources allocated to a process.
+Context-switch between threads takes less time than process.
+
+171) What are the advantages and disadvantages of multithreading?
+A) Advantages of multithreading:
+   To maintain a responsive user interface
+   It makes efficient use of processor time while waiting for I/O operations to complete.
+   To split large, CPU-bound tasks to be processed simultaneously on a machine that has multiple CPUs/cores. 
+   Disadvantages of multithreading:
+   On a single-core/processor machine threading can affect performance negatively as there is overhead involved with 
+   context-switching.
+   Have to write more lines of code to accomplish the same task.
+   Multithreaded applications are difficult to write, understand, debug, and maintain.
+
+172) How can we create a Thread in C#?
+A) To create a THREAD, we need to create an instance of Thread class (Thread class provided by System.Threading namespace) and to its constructor, we have to pass the function name as a parameter that we want the thread to execute. Then we need to call the start method of the Thread class. 
+
+173) How do protect shared resources from concurrent access?
+A) Using Interlocked.Increment() method: Modify AddOneMillion() method as shown below. The Interlocked.Increment() Method, increments a specified variable and stores the result, as an atomic operation
+
+public static void AddOneMillion()
+{
+    for (int i = 1; i <= 1000000; i++)
+    {
+        Interlocked.Increment(ref Total);
+    }
+}
+static object _lock = new object();
+public static void AddOneMillion()
+{
+    for (int i = 1; i <= 1000000; i++)
+    {
+        lock (_lock)
+        {
+            Total++;
+        }
+    }
+}
+
+174) what is asynchronous programming in c#?
+A) allows you to perform long-running operations without blocking the main thread, improving application responsiveness and performance.
+async and await keywords facilitate asynchronous programming, enabling non-blocking operations and improving application responsiveness. async marks a method as asynchronous, while await suspends execution until an asynchronous operation completes. 
+
+175) What happens if we execute an asynchronous method but don't await it?
+A) Nothing special, the operation represented by the task will continue its lifetime normally, but the result won't be observed. The task object itself will eventually be reclaimed by garbage collector.
+Note that we can also use .ContinueWith() to handle the result in a call-back fashion.
+
+176) what is multi threading in c#?
+A) multithreading allows a program to execute multiple tasks concurrently, improving performance and responsiveness by utilizing available CPU cores and resources efficiently.
+Multithreading is a programming technique where a single program can perform multiple tasks at the same time by running them in separate threads. 
+
+177) advantages and disadvantages of async and await in c#?
+A) Advantages:
+Improved Responsiveness: Async/await allows long-running operations to run in the background without blocking the main thread, resulting in a more responsive user interface (UI). 
+Enhanced Readability: Asynchronous code using async and await can often resemble synchronous code, making it easier to read, understand, and maintain. 
+Simplified Asynchronous Programming: These keywords streamline the process of writing asynchronous code, reducing the need for complex callback structures or continuation-passing style. 
+Resource Utilization: By avoiding blocking the main thread, applications can handle more requests concurrently, improving resource utilization. 
+Easier Error Handling and Testability: Async/await methods enable easier error handling and make asynchronous code easier to test. 
+
+Disadvantages:
+Overhead: While the overhead is usually minimal, using async and await can introduce a small performance overhead, especially when dealing with very short operations. 
+Complexity: The underlying concepts of asynchronous programming and the use of async and await can be challenging for beginners to grasp. 
+Potential for Deadlocks: Mixing synchronous and asynchronous code can lead to deadlocks, especially when using await in contexts where the calling thread is blocked. 
+Overuse: Overusing async and await for every operation, even those that don't involve I/O, can lead to performance issues and make the code harder to understand. 
+Async "All the Way Down": Once you start using async/await, you might find yourself needing to make every method async, which can lead to a lot of async code, even when it's not necessary. 
+Async void methods: Async void methods have different error-handling semantics and are difficult to test. 
+
+178) Why async is better than threads?
+A) Improved Responsiveness: By avoiding thread blocking, asynchronous programming ensures that the application remains responsive and can handle a high volume of requests or events concurrently.
+
+179) When not to use asynchronous?
+A) If a situation requires urgent action or decision-making, asynchronous communication may not be the best option, as it can cause a delay in the response or decision.
+
+180) 
 
 
 
