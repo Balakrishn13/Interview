@@ -1141,6 +1141,14 @@ A) Routing is a way how Web API matches a URI to an action. It is basically a pr
 Convention-based routing: Web API supports convention-based routing. In this type of routing, Web API uses route templates to select which controller and action method to execute. 
 Attribute-based routing: Web API 2 generally supports a new type of routing known as attribute routing. As the name suggests, it uses attributes to define routes. It is the ability to add routes to the route table via attributes. 
 
+183) Average salary from table?
+A) SELECT dname, AVG(salary) AS avg_salary
+   FROM department as a left outer join employees as b on a.did=b.did 
+   GROUP BY dept_name
+   ORDER BY avg_salary DESC;
+
+184) 
+
 
 
      
