@@ -1147,7 +1147,26 @@ A) SELECT dname, AVG(salary) AS avg_salary
    GROUP BY dept_name
    ORDER BY avg_salary DESC;
 
-184) 
+184) Program?
+A) input: string s="hello world how are you bala";
+		string[] re=s.Split(" ");
+		int k=re.Length-1;
+		string rev=string.Empty;
+		while(k>=0)
+		{
+			if(string.IsNullOrEmpty(rev)){
+			rev= re[k];
+			k--;
+		}else{
+			rev=rev+" "+re[k];
+			k--;
+			}
+		}
+		Console.WriteLine(rev);
+output: bala you are how world hello
+
+185) 
+
 
 
 
