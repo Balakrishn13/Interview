@@ -1244,7 +1244,35 @@ A)      int[] arr = new int[5] { 1, 2, 3, 4, 5 };
             Console.WriteLine(arr[i]);
         }
 
-188) 
+188) what is the difference between .net framework and .net core?
+A) .NET Framework is a legacy, Windows-only platform, while .NET Core is a modern, cross-platform, and open-source framework that runs on Windows, macOS, and Linux. The main differences between . NET Core and . NET Framework revolve around cross-platform capabilities, performance, modularity, and development flexibility
+.NET Framework: Ideal for legacy applications, desktop applications, and Windows-specific web applications.
+.NET Core/ .NET: Best suited for new projects, cloud-based applications, microservices, and cross-platform development. 
+
+189) how many types of authentication in web api?
+A) There are several authentication methods for web APIs, including API keys, Basic Authentication, Token-based authentication (like JWT), and OAuth 2.0, each with its own strengths and weaknesses. 
+
+ 1. API Key Authentication:
+    Mechanism: Clients are given a unique, secret key that they include in each request to the API. 
+    Pros: Simple to implement and understand. 
+    Cons: Less secure as keys can be compromised, and key management can become complex. 
+2. Basic Authentication:
+   Mechanism: Clients provide their username and password in each request, typically encoded in Base64. 
+   Pros: Simple to implement. 
+   Cons: Not secure as credentials are transmitted in plain text (unless using HTTPS). 
+3. Token-Based Authentication (e.g., JWT):
+   Mechanism: The server issues a token (e.g., JWT) upon successful authentication, and the client includes this token in 
+   subsequent requests. 
+   Pros: More secure than Basic Authentication, as tokens can be short-lived and revoked, and can be used for stateless 
+   authentication. 
+   Cons: Requires more complex implementation than API Keys or Basic Authentication. 
+4. OAuth 2.0:
+   Mechanism: A standard protocol that allows users to grant third-party applications access to their resources without 
+   sharing their credentials directly.
+   Pros: Highly secure and flexible, allowing for different levels of access.
+   Cons: More complex to implement than other methods. 
+
+190) 
 
 
 
