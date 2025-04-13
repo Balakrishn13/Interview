@@ -356,8 +356,44 @@ Once SASS is included in your Angular project, you can write your styles using S
 64) What happens when we use the script tag within a template?
 A) Using the script tag within an Angular template is not a recommended practice. Angular templates are intended to define the structure and layout of the user interface, and including scripts directly within the template goes against the separation of concerns principle. When a script tag is used within a template, the browser treats it as part of the HTML content and attempts to execute it. However, Angular's template compiler does not process or execute scripts within templates. Instead, scripts should be placed in separate JavaScript files and included using the appropriate Angular mechanisms, such as component logic or Angular modules.
 
-65)
+65) Reactive Forms vs Template Driven Forms?
+A) Reactive Forms: Reactive Forms is a way through which we can build forms in Angular. It makes use of the component class to programmatically declare the form controls. The validations and other form controls are written in the component class. Then these written form controls are then bound to the input fields present in the html template.
 
+Template Driven Forms: Template Driven Forms is the most simplest way through which we can build a form in Angular. It utilizes Angular's two-way data binding directive (ngModel). This helps the user to manage and create the form instance. The whole form is managed entirely in the view template. There is no or minimal need to write programmatically code in the typescript file.
+
+Data Binding:
+Reactive Forms: Data Binding is done using formControlName and formGroup.
+Template Driven Forms: Data Binding is done using ngModel directive.
+
+Form Creation:
+Reactive Forms: Form is created programmatically. We need to write more code in component.
+Template Driven Forms: Form is created automatically from the template. There is less requirement to write code in component.
+
+Programming paradigm:
+Reactive Forms: The logic of the form mainly resides in the template.
+Template Driven Forms: The logic of the form is mainly defined in the template.
+
+Complexity Handling:
+Reactive Forms: It is more suited for complex forms and dynamic form elements.
+Template Driven Forms: It is more suitable for simpler forms.
+
+Validation:
+Reactive Forms: The validation logic are defined in the component code.
+Template Driven Forms: The validation is provided with the help of template directives.
+
+Flexibility:
+Reactive Forms: There is more flexibility for handling complex and complicated usecases.
+Template Driven Forms: There is less flexibility for handling complex and complicated usecases.
+
+Integration with backend:
+Reactive Forms: It is easier to integrate with the backend.
+Template Driven Forms: It is more difficult to integrate with the backend.
+
+Form Grouping:
+Reactive Forms: There is proper grouping of form controls.
+Template Driven Forms: There is no proper grouping of form controls.
+
+66) 
 
 
    
