@@ -1272,7 +1272,45 @@ A) There are several authentication methods for web APIs, including API keys, Ba
    Pros: Highly secure and flexible, allowing for different levels of access.
    Cons: More complex to implement than other methods. 
 
-190) 
+190) Check the program?
+A) Input:					
+public class Program
+{
+	public static void Main()
+	{
+		parentclass obj=new childclass();
+         obj.method();			
+		Console.WriteLine("Hello World");
+	}
+   public class parentclass
+ {
+    public parentclass(){
+	 Console.WriteLine("parentclass Constructor");}
+
+    public  void method(){
+	Console.WriteLine("parentclass method");}
+
+}
+public class childclass:parentclass
+{
+   public childclass(){
+    Console.WriteLine("childclass Constructor");}
+
+	  public  void method(){
+      Console.WriteLine("childclass method");
+}
+}
+}
+Output: parentclass Constructor
+        childclass Constructor
+        parentclass method
+        Hello World
+
+191) 
+
+ 
+
+
 
 
 
