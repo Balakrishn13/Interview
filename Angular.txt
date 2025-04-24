@@ -417,7 +417,8 @@ A) Components: These are the basic UI building blocks, controlling a portion of 
    Metadata: Information attached to classes using decorators, providing Angular with instructions on how to process them.
    Routing: A mechanism for navigating between different views or components in the application, based on the URL.
 
-67) 
+67) what is service decorator in angular?
+A) In Angular, a service decorator, specifically @Injectable(), is a marker that identifies a class as a service and makes it available for dependency injection. It provides metadata that Angular uses to inject dependencies into the service. The @Injectable() decorator is essential for any service that will be injected into other components, directives, or services.
 
 
 
