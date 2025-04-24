@@ -1309,7 +1309,22 @@ Output: parentclass Constructor
 191) what is repository pattern c# entity framework?
 A) The Repository pattern in C# with Entity Framework helps create an abstraction layer between the data access layer and the business logic layer, allowing for cleaner code and easier testing. It provides a consistent interface for interacting with data persistence, such as a database.
 
-192) 
+192) Arrey sorting?
+A)   int[] intArray = new int[] {2,9,4,3,5,1,7 };  
+            int temp = 0;  
+  
+            for (int i = 0; i <= intArray.Length-1; i++)  
+            {  
+                for (int j = i+1; j < intArray.Length; j++)  
+                {  
+                    if (intArray[i] > intArray[j])  
+                    {  
+                        temp = intArray[i];  
+                        intArray[i] = intArray[j];  
+                        intArray[j] = temp;  
+                    }  
+                }  
+            }  
 
  
 
