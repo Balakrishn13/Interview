@@ -241,7 +241,7 @@ npm install bootstrap
 npm install jquery
 
 39) What is Eager and Lazy Loading?
-A) Eager loading is the default module-loading strategy. Feature modules under Eager loading are loaded before the application starts. This is typically used for small-size applications.
+A) Eager loading is the default module-loading strategy. Feature modules under Eager loading are loaded before the application starts. This is typically used for small-size applications. FeatureModule // Eagerly loaded module
 
 Lazy loading dynamically loads the feature modules when there's a demand. This makes the application faster. It is used for bigger applications where all the modules are not required at the start of the application.
 
@@ -393,7 +393,27 @@ Form Grouping:
 Reactive Forms: There is proper grouping of form controls.
 Template Driven Forms: There is no proper grouping of form controls.
 
-66) 
+66) building blocks of angular?
+A) Components: These are the basic UI building blocks, controlling a portion of the screen. Each component consists of:
+               A template (HTML) defining the view.
+               A class (TypeScript) containing the logic.
+               Metadata, provided by the @Component decorator, configuring the component.
+   Modules: These are containers that group related components, directives, and services, organizing the application into logical units.
+   Directives: These modify the behavior or appearance of elements in the DOM. There are three types:
+               Components: Directives with a template.
+               Structural directives: Modify the DOM layout by adding or removing elements. 
+               Attribute directives: Change the appearance or behavior of an element. 
+   Services: These provide reusable logic or data to components, such as fetching data from an API.
+   Dependency Injection: A design pattern that allows components to receive their dependencies (services) from an external source, promoting modularity and 
+   testability.
+   Data Binding: A mechanism for synchronizing data between the component and the template, enabling dynamic updates in the UI.
+   Templates: HTML structures that define the view of a component, using Angular's template syntax for data binding and event handling.
+   Metadata: Information attached to classes using decorators, providing Angular with instructions on how to process them.
+   Routing: A mechanism for navigating between different views or components in the application, based on the URL.
+
+67) 
+
+
 
 
    
