@@ -1306,7 +1306,10 @@ Output: parentclass Constructor
         parentclass method
         Hello World
 
-191) 
+191) what is repository pattern c# entity framework?
+A) The Repository pattern in C# with Entity Framework helps create an abstraction layer between the data access layer and the business logic layer, allowing for cleaner code and easier testing. It provides a consistent interface for interacting with data persistence, such as a database.
+
+192) 
 
  
 
