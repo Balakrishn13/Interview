@@ -1326,6 +1326,15 @@ A)   int[] intArray = new int[] {2,9,4,3,5,1,7 };
                 }  
             }  
 
+
+193) lock in sql server?
+A) to prevent concurrent use of resources by different transactions. For example, if an exclusive (X) lock is held on a row within a table by a transaction, no other transaction can modify that row until the lock is released.
+
+194) Nolock in sql server?
+A) NOLOCK overrides SQL Server default isolation level behavior and allows users to retrieve uncommitted data without affecting the locking mechanism on the required data
+
+195) 
+
  
 
 
