@@ -1333,7 +1333,49 @@ A) to prevent concurrent use of resources by different transactions. For example
 194) Nolock in sql server?
 A) NOLOCK overrides SQL Server default isolation level behavior and allows users to retrieve uncommitted data without affecting the locking mechanism on the required data
 
-195) 
+195) job scheduling in c# net?
+A) The Job Scheduler allows you to define and maintain a set of jobs that need to be automatically executed either at a given point in time, at a specified frequency or when a specific event occurs in IGSS.
+In C#, a job scheduler is a system that manages the execution of tasks or jobs at specified times or in response to events. It allows you to automate repetitive tasks, run background processes, and orchestrate the execution of code. 
+In C# .NET, job scheduling can be achieved using various tools and techniques. Popular choices include Quartz.NET, FluentScheduler, Hangfire, and the built-in Timer class. These libraries provide different levels of complexity and features, catering to various project requirements. 
+
+TaskScheduler Class: This is part of the .NET framework and is used to schedule tasks for execution. 
+Quartz.NET:
+  1. A full-featured, open-source job scheduling system.
+  2. Supports complex schedules, persistence, and clustering.
+  3. Ideal for enterprise applications with demanding scheduling needs. 
+  Quartz.NET: Ideal for large, complex applications where you need a robust scheduler with advanced features. 
+FluentScheduler:
+  1. A simple and lightweight scheduler for .NET applications.
+  2. Easy to integrate and use, making it suitable for smaller projects.
+  3. Offers features like recurring tasks and job execution at specific times. 
+  FluentScheduler: A good choice for simpler projects where you need to schedule tasks with ease. 
+Hangfire:
+  1. A lightweight job scheduler for .NET that is designed for background tasks.
+  2. Supports recurring jobs and allows you to schedule tasks to run later.
+  3. Can be easily integrated with ASP.NET applications. 
+  Hangfire: A good fit for background task management in ASP.NET applications. 
+Built-in Timer:
+  1. The Timer class in the System.Threading namespace provides basic scheduling capabilities.
+  2. Useful for simple periodic task execution.
+  3. May require more manual management compared to dedicated libraries. 
+  Timer: Suitable for simple periodic task execution in non-web applications. 	
+
+196) What is batch processing in C#?
+A) Batching is the process of dividing a large amount of data into smaller, manageable chunks or batches. This practice is crucial in data handling as it offers several advantages: Memory Efficiency: Smaller chunks can be processed more efficiently than large datasets, reducing memory usage.
+
+197) what is web services in c#?
+A) In C#, web services allow applications to interact with each other over the internet by exposing methods that can be invoked by other applications. They are essentially software components that exchange information via common internet protocols using XML-based data exchange. C# web services can be developed using ASP.NET Web Services or ASP.NET Core Web APIs. 
+Key Aspects of C# Web Services:
+Cross-Platform: C# web services can be accessed by applications written in different programming languages, provided they support the relevant protocols. 
+XML-Based Data Exchange: Web services use XML to communicate, making them versatile and compatible with various platforms. 
+SOAP and REST: Two primary types of web services are SOAP (Simple Object Access Protocol) and REST (Representational State Transfer), each with its own characteristics and advantages. 
+ASP.NET Web Services: Traditional ASP.NET Web Services provide a way to create SOAP-based services using the WebService class and the WebMethod attribute. 
+ASP.NET Core Web APIs: ASP.NET Core Web APIs offer a more modern and flexible approach to creating RESTful services. 
+
+198) What is the role of a web service?
+A) A Web service is a method of communication between two electronic devices over a network.
+
+199) 
 
  
 
