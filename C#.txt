@@ -1375,7 +1375,18 @@ ASP.NET Core Web APIs: ASP.NET Core Web APIs offer a more modern and flexible ap
 198) What is the role of a web service?
 A) A Web service is a method of communication between two electronic devices over a network.
 
-199) 
+199) What is Swagger?
+A) Swagger is an open source API documentation that helps us to understand API service methods.
+When we consume a web API, then understanding its various methods and verbs can be challenging for a developer.  This solves the problem of generating documentation.  It's also known as OpenAPI.
+Package installation: Swashbuckle.AspNetCore 
+Swagger middleware: services.AddSwaggerGen();
+ app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+   c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Test1 Api v1");
+});    
+
+200) 
 
  
 
