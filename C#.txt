@@ -1386,7 +1386,32 @@ app.UseSwaggerUI(c =>
    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Test1 Api v1");
 });    
 
-200) 
+200) difference between web api and rest api?
+A) A Web API is a broad term for any API that operates over the web using HTTP or HTTPS. A REST API is a specific type of Web API that adheres to the REST (Representational State Transfer) architectural style, following principles like statelessness and client-server architecture. Essentially, all REST APIs are Web APIs, but not all Web APIs are RESTful.
+
+Web API:
+Broad term: Encompasses any API used over the web, including those that don't strictly follow REST principles. 
+Flexible: Can support various protocols and formats, not just HTTP. 
+Examples: SOAP APIs, XML-RPC APIs, or custom APIs that don't adhere to REST. 
+REST API:
+Specific architectural style: Follows REST principles, ensuring statelessness, client-server architecture, caching, and a uniform interface. 
+Uses HTTP methods: Uses standard HTTP methods like GET, POST, PUT, DELETE for operations. 
+Data formats: Typically uses JSON or XML for data representation. 
+Advantages: Scalable, flexible, and easier to use compared to some other API types.
+
+201) What is the difference between web and API?
+A) Web applications are responsible for managing the user interface, business logic, and data presentation to end-users. APIs are responsible for exposing specific functionalities or data from a server or service to be used by other applications
+
+202) Which is better Web API or REST API?
+A) REST APIs often perform better due to their stateless nature and reliance on standard HTTP methods. They typically use JSON, which is generally more lightweight than XML in SOAP and leads to faster data transmission and processing. They also leverage HTTP caching mechanisms to improve response times
+
+203) Why do we use Web API?
+A) Web API supports HTTP/s protocol and URL requests headers that enable services to reach various clients through the web. In REST API, all communications are supported only through HTTP protocol. Web API provides flexibility to any style of communication. REST API uses REST, SOAP, and XML-RPC for communication.
+
+204) What is the difference between API and Microservices?
+A) APIs (Application Programming Interfaces) are the protocols and rules that allow different software applications to interact, while microservices are independent, deployable units of functionality within a larger application. In essence, microservices are often structured around exposing functionality through APIs.
+
+205) 
 
  
 
