@@ -897,6 +897,33 @@ A) An API endpoint is a specific URL within a web API that represents a resource
 
 131) What is CORS and why is it important in Web APIs?
 A) CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers that restricts resources from being requested from another domain. It is important in Web APIs because it allows servers to specify which origins are allowed to access their resources, thereby preventing unauthorized access to sensitive data.
+// Startup.cs or Program.cs
+using Microsoft.AspNetCore.Cors;
+
+public void ConfigureServices(IServiceCollection services)
+{
+    // Add CORS services
+    services.AddCors(options =>
+    {
+        options.AddPolicy("AllowSpecificOrigin", builder =>
+        {
+            builder.WithOrigins("https://example1.com", "https://example2.com")
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+    });
+
+    // Add other services...
+}
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    // Use CORS middleware
+    app.UseCors("AllowSpecificOrigin");
+
+    // Add other middleware...
+}
+
 
 132) What are the advantages of using JWT (JSON Web Tokens) for authentication in Web APIs?
 A) JWT is a compact, URL-safe token format that securely transmits information between parties as a JSON object. Advantages include stateless authentication, scalability, and the ability to carry custom claims. Additionally, JWTs are easy to implement and can be used across different platforms and languages.
